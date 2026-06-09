@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 1 Settimana 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-body-primary">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                    <h1 class="text-white">EpiShop</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active text-decoration-none text-white">Prodotti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-decoration-none text-white">Offerte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-decoration-none text-white">Contatti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#modal4" class="nav-link text-dark fs-5 fw-bold" id="carello">Carello</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-white">
+                <div class="carousel-item active container-fluid text-center bg-primary pb-5 p-lg-5">
+                    <h2 class="fw-bold p-3">Saldi di primavera</h2>
+                    <p>Scopri le offerte sui prodotti in evidenza, fino al 50% di sconto.</p>
+                </div>
+                <div class="carousel-item container-fluid text-center bg-success pb-5 p-lg-5">
+                    <h2 class="fw-bold p-3">Nuova collezione</h2>
+                    <p>Scopri gli arrivi della settimana</p>
+                </div>
+                <div class="carousel-item container-fluid text-center bg-dark pb-5 p-lg-5">
+                    <h2 class="fw-bold p-3">Spedizioni gratis</h2>
+                    <p>Sopra i 50€ su tutto il sito.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 d-none d-xl-block mt-4">
+                    <div class="card p-3">
+                        <h4>Categorie</h4>
+                        <ul class="list-unstyled ps-0">
+                            <li>Scarpe</li>
+                            <li>T-shirt</li>
+                            <li>Borse</li>
+                            <li>Accessori</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-9">
+                    <h2 class="text-center text-md-start fw-bold m-3">Prodotti in evidenza<span
+                            class="bg-danger text-light rounded fs-5 ms-2">-30%</span></h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="card mt-3 m-auto" style="width: 100%;">
+                                <div style="height: 200px;overflow: hidden;">
+                                    <img src="assets/img/sneakers.webp" class="card-img-top" alt="sneakers Nike"
+                                        style="height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="card-body">
+                                    <h4>Sneakers Nike</h4>
+                                    <p class="card-text">€ 89,00</p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal1">Dettagli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="card mt-3  m-auto" style="width: 100%;">
+                                <div style="height: 200px;overflow: hidden;">
+                                    <img src="assets/img/borsacity.webp" class="card-img-top" alt="borsa balenciaga"
+                                        style="height: 100%; object-fit:contain;">
+                                </div>
+                                <div class="card-body">
+                                    <h4>Borsa Balenciaga</h4>
+                                    <p class="card-text">€ 2500,00</p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal2">Dettagli</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="card mt-3 m-auto" style="width: 100%;">
+                                <div style="height: 200px;overflow: hidden;">
+                                    <img src="assets/img/t-shirt.webp" class="card-img-top" alt="t-shirt logo"
+                                        style="height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="card-body">
+                                    <h4>T-shirt con logo</h4>
+                                    <p class="card-text">€ 19,90</p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modal3">Dettagli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal" id="modal1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="height: 400px;overflow: hidden;">
+                            <img src="assets/img/sneakers.webp" class="card-img-top" alt="sneakers Nike"
+                                style="height: 100%; object-fit: contain;">
+                        </div>
+                        <p>Scarpa leggera per la corsa, suola in gomma traspirante. <br> Disponibile dal 36 al 46</p>
+                        <p class="fw-bold">€ 89,90</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="height: 400px;overflow: hidden;">
+                            <img src="assets/img/borsacity.webp" class="card-img-top" alt="borsa balenciaga"
+                                style="height: 100%; object-fit:contain;">
+                        </div>
+                        <p>Bellissima borsa Balenciaga. <br>Edizione limitata</p>
+                        <p class="fw-bold">€ 2500,00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal3" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">T-shirt</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="height: 400px;">
+                            <img src="assets/img/t-shirt.webp" class="card-img-top" alt="t-shirt logo"
+                                style="height: 100%; object-fit: contain;">
+                        </div>
+                        <p>T.shirt con logo personalizzato <br> Disponibile dalla S alla xxl </p>
+                        <p class="fw-bold">€ 19,90</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal4" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Il tuo carello</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="height: 400px;">
+                        </div>
+                        <p>T.shirt con logo personalizzato <br> Disponibile dalla S alla xxl </p>
+                        <p class="fw-bold">€ 19,90</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid text-center text-white bg-black p-2">
+        <p>&copy EpiShop - tutti i diritti riservati</p>
+    </footer>
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
