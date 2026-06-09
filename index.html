@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+    
 
 <head>
     <meta charset="UTF-8">
@@ -34,7 +35,7 @@
                             </li>
                             <li class="nav-item">
                                 <a href="#" data-bs-toggle="modal"
-                                        data-bs-target="#modal4" class="nav-link text-dark fs-5 fw-bold" id="carello">Carello</a>
+                                        data-bs-target="#modal4" class="nav-link text-light fst-italic fs-5 fw-bold" id="carello">Carello</a>
                             </li>
                         </ul>
                     </div>
@@ -137,7 +138,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
+                        <h5 class="modal-title fw-bold">Nike</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -150,7 +151,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
+                        <button type="button" class="btn btn-success carelloAdd">Aggiungi al carello</button>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
+                        <h5 class="modal-title fw-bold">Balenciaga</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -172,7 +173,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
+                        <button type="button" class="btn btn-success carelloAdd">Aggiungi al carello</button>
                     </div>
                 </div>
             </div>
@@ -181,7 +182,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">T-shirt</h5>
+                        <h5 class="modal-title fw-bold">T-shirt</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -194,7 +195,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
+                        <button type="button" class="btn btn-success carelloAdd">Aggiungi al carello</button>
                     </div>
                 </div>
             </div>
@@ -203,18 +204,17 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Il tuo carello</h5>
+                        <h5 class="modal-title fw-bold">Il tuo carello</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div style="height: 400px;">
+                        <ul id="cartList" class="list-group list-group-flush"></ul>
+                    <div class="modal-footer justify-content-between align-items-center">
+                        <span id="cartTotal" class="fw-bold fs-5">Totale: € 0,00</span>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Acquista</button>
                         </div>
-                        <p>T.shirt con logo personalizzato <br> Disponibile dalla S alla xxl </p>
-                        <p class="fw-bold">€ 19,90</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Aggiungi al carello</button>
                     </div>
                 </div>
             </div>
@@ -228,5 +228,4 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
