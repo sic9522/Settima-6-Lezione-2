@@ -15,7 +15,7 @@ carelloAdd.forEach(button => {
         const openModal = document.querySelector('.modal.show')
         const productName = openModal.querySelector('.modal-title').textContent
         const productImg = openModal.querySelector('img').src
-        const productPriceText = openModal.querySelector('.fw-bold').textContent.trim()
+        const productPriceText = openModal.querySelector('p.fw-bold').textContent.trim()
         const productPrice = parseFloat(productPriceText.replace('€', '').trim().replace(/\./g, '').replace(',', '.'))
 
         const li = document.createElement('li')
