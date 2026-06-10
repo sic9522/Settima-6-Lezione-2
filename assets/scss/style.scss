@@ -1,0 +1,131 @@
+@use 'partials/variables' as v;
+
+@mixin principal {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin cardDark {
+    background-color: rgb(50, 50, 50);
+    border: 1px solid white;
+    color: white;
+}
+
+body {
+    @include principal;
+}
+
+main {
+    flex-grow: 1;
+    margin-bottom: 3rem;
+}
+
+.cardUpUno {
+    background-color: v.$bgCardUno;
+}
+
+.cardUpDue {
+    background-color: v.$bgCardDue;
+}
+
+.cardUpTre {
+    background-color: v.$bgCardTre;
+}
+
+.cardUpQuattro {
+    background-color: v.$bgCardQuattro;
+}
+
+.cardUpCinque {
+    background-color: v.$bgCardCinque;
+}
+
+.cardUpSei {
+    background-color: v.$bgCardSei;
+}
+
+.modal-body-1 { background-color: v.$bgCardUno; }
+.modal-body-2 { background-color: v.$bgCardDue; }
+.modal-body-3 { background-color: v.$bgCardTre; }
+.modal-body-4 { background-color: v.$bgCardQuattro; }
+.modal-body-5 { background-color: v.$bgCardCinque; }
+.modal-body-6 { background-color: v.$bgCardSei; }
+
+
+footer {
+    background-color: v.$colorPrincipal;
+}
+
+#cartDropdown {
+    position: sticky;
+    top: 56px;
+    z-index: 999;
+    background-color: white;
+    border-bottom: 2px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-height: 300px;
+    overflow-y: auto;
+
+    @media (min-width: 768px) {
+        position: fixed;
+        top: 56px;
+        right: 0;
+        width: 480px;
+        border-bottom: none;
+        border-left: 2px solid #dee2e6;
+        border-radius: 0 0 0 8px;
+    }
+}
+
+#darkModeBtn {
+    width: 100px;
+}
+
+
+.dark-mode {
+    background-color: v.$colorPrincipal;
+
+    h2 {
+        color: white;
+    }
+
+    .card-body {
+        background-color: v.$darkModePrincipal;
+        color: white;
+    }
+
+    #darkModeBtn {
+        background-color: v.$darkModePrincipal !important;
+    }
+
+    .card {
+        @include cardDark;
+    }
+    footer {
+        background-color: v.$darkModePrincipal;
+    }
+
+    header {
+        background-color: v.$darkModePrincipal !important;
+    }
+}
+
+#cartCount {
+    font-size: 1rem;
+}
+
+@keyframes shakeForte {
+    0%   { transform: translateX(0) scale(1); }
+    10%  { transform: translateX(-30px) rotate(-4deg) scale(1.08); }
+    25%  { transform: translateX(30px) rotate(4deg) scale(1.12); }
+    40%  { transform: translateX(-25px) rotate(-3deg) scale(1.1); }
+    55%  { transform: translateX(25px) rotate(3deg) scale(1.08); }
+    70%  { transform: translateX(-15px) rotate(-1deg) scale(1.05); }
+    85%  { transform: translateX(15px) rotate(1deg) scale(1.03); }
+    100% { transform: translateX(0) scale(1); }
+}
+
+#modalConfermaElimina.modal-static .modal-dialog {
+    animation: shakeForte 0.6s ease;
+}
