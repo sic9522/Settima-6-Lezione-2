@@ -268,3 +268,51 @@ darkModeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode')
     darkModeBtn.textContent = document.body.classList.contains('dark-mode') ? 'Tema Chiaro' : 'Tema Scuro'
 })
+
+
+/*filtro*/
+
+const tutti = document.getElementById('tutti');
+const scarpe = document.getElementById('scarpe');
+const borse = document.getElementById('borse');
+const abbigliamento = document.getElementById('abbigliamento');
+const card = document.querySelectorAll('[data-categoria]');
+
+tutti.addEventListener('click', (e) => {
+    card.forEach((col) => {
+        col.classList.remove('d-none');
+    })
+});
+
+scarpe.addEventListener('click', (e) => {
+    card.forEach((col) => {
+        if (col.dataset.categoria === e.target.id) {
+            return col.classList.remove('d-none');
+
+        } else {
+            return col.classList.add('d-none');
+        }
+    });
+});
+
+borse.addEventListener('click', (e) => {
+    card.forEach((col) => {
+        if (col.dataset.categoria === e.target.id) {
+            return col.classList.remove('d-none');
+
+        } else {
+            return col.classList.add('d-none');
+        }
+    });
+});
+
+abbigliamento.addEventListener('click', (e) => {
+    card.forEach((col) => {
+        if (col.dataset.categoria === e.target.id) {
+            return col.classList.remove('d-none');
+
+        } else {
+            return col.classList.add('d-none');
+        }
+    });
+});

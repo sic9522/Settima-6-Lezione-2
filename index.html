@@ -17,7 +17,8 @@
             <nav class="navbar navbar-expand-md bg-body-primary">
                 <div class="container-fluid d-flex align-items-center gap-2">
                     <h1 class="text-white me-auto">EpiShop</h1>
-                    <button type="button" id="darkModeBtn" class="btn btn-sm bg-primary text-white border">Tema Scuro</button>
+                    <button type="button" id="darkModeBtn" class="btn btn-sm bg-primary text-white border">Tema
+                        Scuro</button>
                     <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02">
                         <ul class="navbar-nav align-items-center gap-1">
                             <li class="nav-item">
@@ -31,9 +32,8 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal4"
-                        class="nav-link text-light fst-italic" id="carrello">( <span
-                            id="cartCount">0</span> ) Carrello</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal4" class="nav-link text-light fst-italic"
+                        id="carrello">( <span id="cartCount">0</span> ) Carrello</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -91,8 +91,14 @@
                 <div class="col-12 col-xl-9">
                     <h2 class="text-center text-md-start fw-bold m-3">Prodotti in evidenza<span
                             class="bg-danger text-light rounded fs-5 ms-2">-30%</span></h2>
+                    <div class="container ">
+                        <button type="button" id="tutti" class="btn border border-success text-success">Tutti</button>
+                        <button type="button" id="scarpe" class="btn border border-success text-success">Scarpe</button>
+                        <button type="button" id="borse" class="btn border border-success text-success">Borse</button>
+                        <button type="button" id="abbigliamento" class="btn border border-success text-success">Abbigliamneto</button>
+                    </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-12 col-md-6 col-xl-4" data-categoria="scarpe">
                             <div class="card mt-3 m-auto" style="width: 100%;">
                                 <div class="cardUpUno" style="height: 200px;overflow: hidden;">
                                     <img src="assets/img/sneakers.webp" class="card-img-top" alt="sneakers Nike"
@@ -104,12 +110,13 @@
                                     <div class="d-flex gap-2">
                                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
                                             data-bs-target="#modal1">Dettagli</button>
-                                        <button type="button" class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
+                                        <button type="button"
+                                            class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-12 col-md-6 col-xl-4" data-categoria="borse">
                             <div class="card mt-3  m-auto" style="width: 100%;">
                                 <div class="cardUpDue" style="height: 200px;overflow: hidden;">
                                     <img src="assets/img/borsacity.webp" class="card-img-top" alt="borsa balenciaga"
@@ -121,12 +128,13 @@
                                     <div class="d-flex gap-2">
                                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
                                             data-bs-target="#modal2">Dettagli</button>
-                                        <button type="button" class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
+                                        <button type="button"
+                                            class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-12 col-md-6 col-xl-4" data-categoria="abbigliamento">
                             <div class="card mt-3 m-auto" style="width: 100%;">
                                 <div class="cardUpTre" style="height: 200px;overflow: hidden;">
                                     <img src="assets/img/t-shirt.webp" class="card-img-top" alt="t-shirt logo"
@@ -138,12 +146,13 @@
                                     <div class="d-flex gap-2">
                                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
                                             data-bs-target="#modal3">Dettagli</button>
-                                        <button type="button" class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
+                                        <button type="button"
+                                            class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-12 col-md-6 col-xl-4" data-categoria="borse">
                             <div class="card mt-3 m-auto" style="width: 100%;">
                                 <div class="cardUpQuattro" style="height: 200px;overflow: hidden;">
                                     <img src="assets/img/Fendi.webp" class="card-img-top" alt="Borsa Fendi"
@@ -155,12 +164,13 @@
                                     <div class="d-flex gap-2">
                                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
                                             data-bs-target="#modal5">Dettagli</button>
-                                        <button type="button" class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
+                                        <button type="button"
+                                            class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-12 col-md-6 col-xl-4" data-categoria="scarpe">
                             <div class="card mt-3 m-auto" style="width: 100%;">
                                 <div class="cardUpCinque" style="height: 200px;overflow: hidden;">
                                     <img src="assets/img/adidas.webp" class="card-img-top" alt="sneakers adidas"
@@ -172,12 +182,13 @@
                                     <div class="d-flex gap-2">
                                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
                                             data-bs-target="#modal6">Dettagli</button>
-                                        <button type="button" class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
+                                        <button type="button"
+                                            class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-12 col-md-6 col-xl-4" data-categoria="abbigliamento">
                             <div class="card mt-3 m-auto" style="width: 100%;">
                                 <div class="cardUpSei" style="height: 200px;overflow: hidden;">
                                     <img src="assets/img/camicia.webp" class="card-img-top" alt="camicia premium"
@@ -189,7 +200,8 @@
                                     <div class="d-flex gap-2">
                                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal"
                                             data-bs-target="#modal7">Dettagli</button>
-                                        <button type="button" class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
+                                        <button type="button"
+                                            class="btn bg-success text-white cardAggiungi w-50">Aggiungi</button>
                                     </div>
                                 </div>
                             </div>
@@ -355,7 +367,8 @@
                 <div class="modal-content">
                     <div class="modal-header bg-danger justify-content-center">
                         <h5 class="modal-title fw-bold text-white">Attenzione</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center">
                         <p>Sei sicuro di voler rimuovere questo articolo dal carrello?</p>
